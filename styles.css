@@ -1,28 +1,49 @@
-/* Styles for header, navigation, main, footer */
-body {
-    font-family: Arial, sans-serif;
+/* Reset and global styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 header h1 {
-    margin: 0;
+    float: left;
+}
+
+nav {
+    float: right;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
 }
 
 nav ul li a {
@@ -30,16 +51,37 @@ nav ul li a {
     color: #fff;
 }
 
+/* Main styles */
 main {
-    padding: 20px;
+    padding: 20px 0;
 }
 
+/* Featured Dishes styles */
+.featured-dishes {
+    /* Add styling for the featured dishes */
+}
+
+/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
-/* Styles for featured dish section and other sections/pages */
-/* Add your own CSS for individual sections/pages as needed */
+footer p, footer ul {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    list-style-type: none;
+}
+
+.social-media li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media li:last-child {
+    margin-right: 0;
+}
